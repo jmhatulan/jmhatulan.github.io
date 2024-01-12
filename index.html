@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Miguel Hatulan</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var currentTime = new Date();
+      var currentHour = currentTime.getHours();
+      var greeting;
+
+      if (currentHour < 12) {
+        greeting = 'Good Morning,';
+      } else if (currentHour < 18) {
+        greeting = 'Good Afternoon,';
+      } else {
+        greeting = 'Good Evening,';
+      }
+
+      document.getElementById('greeting').innerHTML = greeting + " I'm Joshua.";
+    });
+  </script>
+
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <div>
+      
+      <h1 id="greeting"></h1>
+      
+    </div>
+
+  </div>
+
+</body>
+
+</html>
