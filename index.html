@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joshua Miguel Hatulan</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
   
+  <!-- System Time Checker For Different Greetings -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var currentTime = new Date();
@@ -27,6 +29,7 @@
 </head>
 
 <body>
+ 
   <nav id="desktop-nav">
     <div class="logo">JM</div>
     <div>
@@ -38,16 +41,26 @@
       </ul>
     </div>
   </nav>
-<!--
+
   <nav id="hamburger-nav">
     <div class="logo">JM</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon"></div>
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
     </div>
       
     </div>
   </nav>
--->
+
     <!--
 
       <div class="container">
@@ -61,7 +74,8 @@
       </div>
     -->
     
-    
+    <script src="script.js"></script>
+
 </body>
 
 </html>
