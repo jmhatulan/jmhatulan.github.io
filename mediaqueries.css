@@ -56,7 +56,8 @@
     height: 83vh;
     margin-bottom: 0;
   }
-  article {
+  article,
+  .overlay p {
     font-size: 1rem;
   }
   footer nav {
