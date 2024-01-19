@@ -68,7 +68,7 @@ Insights that you have gathered while accomplishing LT0, LT1, and M1M2 (Guided E
 
 # Insights
 
-> aaa
+> While accomplishing our tasks, I realized how challenging it must have been to learn programming before the internet became mainstream. Today, any programming-related queries or uncertainties can be easily searched on the internet for advice, tutorials, or even the IDE telling you how. Considering the ease of access to resources, it's difficult to imagine the effort it would take to read through books and scrounge for information just to understand how something in a computer works. This realization highlights that, despite the challenges I face while learning programming, it is much easier now than before. I must not overlook the abundance of resources available to me. I am committed to continue improving my skills and become a competent programmer."
 
 <br/>
 <!--
@@ -77,16 +77,17 @@ Struggles that you have encountered while accomplishing LT0, LT1, and M1M2 (Guid
 
 # Struggles
 
-> aaa
+> "I encountered challenges dealing with the overwhelming amount of information that each programming language had to offer. While language almost any language the basics were easy, there were numerous ideas I wished to implement on the website, but lacking extensive knowledge in HTML, CSS, or JavaScript, it often took me a considerable amount of time before successfully implementing my desired outcomes."
 
 <br/>
+
 <!--
 How you could improve your website in the future
 -->
 
 # Further Improvements
 
-> aaa
+> I believe my website has much room for improvement, with several features that could be enhanced. For example, the image displays could be expanded to display a collection of pictures that allows automatic and manual cycling through a given set of images. Another improvement could be a hyperlink that will open another section of the website as a pop-up, providing a better navigation. Additionally, more unique animations and transitions that I currently can't think of. And better design and formatting of the elements through all screen sizes. Moreover, I intende to add more information about my achievements beyond just academic achievements. That said, through time I am confident that I'll be able to implement them all, what I just need is time and effort to learn.
 
 <br/>
 <!--
@@ -95,6 +96,6 @@ Other thoughts that might be noteworthy
 
 # Extra
 
-> aaa
+> I really enjoyed making this activity, allowing my creative yet limited mind to brainstorm ideas to what additional elements could be added to the website without compromising on the clean aesthetic. I look forward to future exercises such as this one.
 
 <br/>
