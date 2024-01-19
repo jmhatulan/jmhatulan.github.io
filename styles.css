@@ -33,25 +33,34 @@ a,
 
 #profile .section__pic-container img {
   transition: transform 1s ease-in-out;
-  border: 5px solid rgba(157, 179, 206, 0.5);
+  border: 10px solid rgba(157, 179, 206, 0.5);
   border-radius: 100%;
-  animation: borderAnimation 1s infinite alternate ease-in-out;
+  animation: borderColorAnimation 5s infinite alternate ease-in-out;
 }
 
 #profile .section__pic-container img:hover {
   transform: rotate(360deg);
 }
 
-@keyframes borderAnimation {
+@keyframes borderColorAnimation {
   0% {
-    border-width: 5px;
+    border-color: rgb(133, 61, 210);
   }
   50% {
-    border-width: 15px;
+    border-color: blue;
   }
   100% {
-    border-width: 5px;
+    border-color: rgb(133, 61, 210);
   }
+}
+
+#socials-container img {
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 100%;
+  padding: 1%;
+}
+#socials-container img:hover {
+  background-color: rgb(50, 145, 64);
 }
 
 /* DESKTOP NAVIGATION */
