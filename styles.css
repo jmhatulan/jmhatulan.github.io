@@ -7,6 +7,7 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(207, 233, 255);
 }
 
 html {
@@ -31,11 +32,26 @@ a,
 }
 
 #profile .section__pic-container img {
-  transition: transform 1s ease-in-out; /* Add transition property */
+  transition: transform 1s ease-in-out;
+  border: 5px solid rgba(157, 179, 206, 0.5);
+  border-radius: 100%;
+  animation: borderAnimation 1s infinite alternate ease-in-out;
 }
 
 #profile .section__pic-container img:hover {
-  transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+  transform: rotate(360deg);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-width: 5px;
+  }
+  50% {
+    border-width: 15px;
+  }
+  100% {
+    border-width: 5px;
+  }
 }
 
 /* DESKTOP NAVIGATION */
@@ -59,17 +75,17 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
 .nav-links-upper a {
   color: white;
 }
 .nav-links-lower a {
   color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 a:hover {
@@ -131,6 +147,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 2;
 }
 
 .menu-links a {
@@ -149,6 +166,13 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+}
+
+.menu-links li:hover a {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: grey;
 }
 
 .hamburger-icon.open span:first-child {
@@ -192,6 +216,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -383,6 +408,53 @@ article .icon {
   cursor: default;
 }
 
+/* ACHIEVEMENTS */
+
+#achievements {
+  position: relative;
+}
+
+/* INTERESTS SECTION */
+
+#interests,
+.details-container {
+  position: relative;
+}
+
+.interests-img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.details-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  overflow-wrap: break-word;
+  max-width: 70%;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -413,6 +485,7 @@ article .icon {
 /* CONTACT */
 
 #contact {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -461,6 +534,8 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* EXPERIMENTS */
 
 /*.container{
         max-width: 1200px;
